@@ -13,7 +13,7 @@ app.use('/posts',postsRoute)
 app.get('/', (req,res) =>{
     res.send('Homepage')
 })
-
+const MURL = "mongodb+srv://hsharm01:Deeshubbk@1991@cluster0.ylhhgdg.mongodb.net/MiniPost?retryWrites=true&w=majority"
 mongoose.connect(MURL).then(() => { console.log('Your mongoDB connector is on...')})
 
 app.listen(3000, ()=>{
